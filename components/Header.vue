@@ -4,40 +4,35 @@
     <b-navbar>
       <template #start>
         <b-navbar-item href="#">
-          Home
+          <nuxt-link :to="{ path: '/',hash:'#home'}">Home</nuxt-link>
         </b-navbar-item>
         <b-navbar-item href="#">
-          Documentation
+          <nuxt-link :to="{ path: '/',hash:'#aim'}">Aim</nuxt-link>
         </b-navbar-item>
-        <b-navbar-dropdown label="Info">
-          <b-navbar-item href="#">
-            About
-          </b-navbar-item>
-          <b-navbar-item href="#">
-            Contact
-          </b-navbar-item>
-        </b-navbar-dropdown>
-      </template>
+        <b-navbar-item href="#">
+          <nuxt-link :to="{ path: '/',hash:'#road-map'}">Road map</nuxt-link>
+        </b-navbar-item>
+        <b-navbar-item href="#">
+          <nuxt-link :to="{ path: '/',hash:'#inputs'}">Your inputs</nuxt-link>
+        </b-navbar-item>
+        <b-navbar-item href="#">
+          <nuxt-link :to="{ path: '/',hash:'#testimonials'}">Testimonials</nuxt-link>
+        </b-navbar-item>
 
+        <b-navbar-item>
+          <b-field>
+            <b-switch
+              v-model="lightMode"
+              passive-type='is-dark'
+              type='is-warning'
+              @change="changeColorMode($event)">
+              {{ lightMode ? "Light Mode" : "Dark Mode" }}
+            </b-switch>
+          </b-field>
+        </b-navbar-item>
+      </template>
     </b-navbar>
-    <section>
-      <b-field>
-        <b-switch v-model="isDarkMode"
-                  true-value="Light"
-                  false-value="Dark">
-          {{ isDarkMode }}
-        </b-switch>
-      </b-field>
-      <b-field>
-        <b-switch
-          v-model="lightMode"
-          passive-type='is-dark'
-          type='is-warning'
-          @change="changeColorMode($event)">
-          {{ lightMode ? "Light Mode" : "Dark Mode" }}
-        </b-switch>
-      </b-field>
-    </section>
+
   </header>
 </template>
 
