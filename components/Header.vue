@@ -1,7 +1,10 @@
 <template>
-  <header>
+  <header class="container">
     <h1 class="title"> Grow Strong! </h1>
-    <b-navbar>
+    <!--
+    vue element error comes from header
+    -->
+    <b-navbar :fixed-top="true"  :transparent="true">
       <template #start>
         <b-navbar-item href="#">
           <nuxt-link :to="{ path: '/',hash:'#home'}">Home</nuxt-link>

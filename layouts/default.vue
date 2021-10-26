@@ -1,6 +1,7 @@
 <template>
   <div>
-    <section :class="'container is-widescreen ' + this.viewMode">
+    <!--<section :class="'container is-widescreen ' + this.viewMode">-->
+    <section class="container is-widescreen">
 
       <div class="container column is-10">
         <Header v-on:light-mode="updateViewMode"/>
