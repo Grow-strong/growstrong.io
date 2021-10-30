@@ -2,7 +2,7 @@
   "name": "grow_strong",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://grow-strong.github.io/growstrong.io/",
+  "homepage": "https://github.com/Grow-strong/growstrong.io",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",

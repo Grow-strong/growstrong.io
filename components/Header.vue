@@ -3,8 +3,9 @@
     <h1 class="title"> Grow Strong! </h1>
     <!--
     vue element error comes from header
-    -->
-    <b-navbar :fixed-top="true"  :transparent="true">
+
+    <b-navbar :fixed-top="true"  :transparent="true">-->
+    <b-navbar>
       <template #start>
         <b-navbar-item href="#">
           <nuxt-link :to="{ path: '/',hash:'#home'}">Home</nuxt-link>
