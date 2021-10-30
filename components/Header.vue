@@ -23,7 +23,7 @@
           <nuxt-link :to="{ path: '/',hash:'#testimonials'}">Testimonials</nuxt-link>
         </b-navbar-item>
 
-        <!--<b-navbar-item>
+        <b-navbar-item>
           <b-field>
             <b-switch
               v-model="lightMode"
@@ -33,7 +33,7 @@
               {{ lightMode ? "Light Mode" : "Dark Mode" }}
             </b-switch>
           </b-field>
-        </b-navbar-item> -->
+        </b-navbar-item>
       </template>
     </b-navbar>
 
