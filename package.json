@@ -2,12 +2,13 @@
   "name": "grow_strong",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://grow-strong.github.io/growstrong.io/",
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "gh-pages -d .nuxt"
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "core-js": "^3.15.1",
@@ -15,6 +16,6 @@
     "nuxt-buefy": "^0.4.8"
   },
   "devDependencies": {
-    "gh-pages": "^3.2.3"
+    "push-dir": "^0.4.1"
   }
 }
